@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const CLIENT_ID = process.env.NOLIO_CLIENT_ID;
 const CLIENT_SECRET = process.env.NOLIO_CLIENT_SECRET;
-const REDIRECT_URI = process.env.REDIRECT_URI || 'https://hopla-coaching.vercel.app/callback';
+const REDIRECT_URI = process.env.REDIRECT_URI || 'https://hopla-coaching-production.up.railway.app/callback';
 
 // ── OAUTH ──────────────────────────────────────────────────────────
 app.get('/auth', (req, res) => {
